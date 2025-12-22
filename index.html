@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR_NET // TERMINAL</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+  <div class="noir-grid">
+    <!-- LEFT SIDEBAR -->
+    <nav class="sidebar">
+      <div class="sidebar-header">
+        <div class="user-id">USER: GHOST</div>
+      </div>
+
+      <div class="menu-items">
+        <a href="/" class="noir-btn" data-link>
+          <span class="icon-box">💬</span>
+          <span class="label">TALK</span>
+        </a>
+        <a href="/projects" class="noir-btn" data-link>
+          <span class="icon-box">📝</span>
+          <span class="label">PROJECTS</span>
+        </a>
+        <a href="/skills" class="noir-btn" data-link>
+          <span class="icon-box">⚡</span>
+          <span class="label">SKILLS</span>
+        </a>
+        <a href="/about" class="noir-btn" data-link>
+          <span class="icon-box">👁</span>
+          <span class="label">LOOK</span>
+        </a>
+        <div class="spacer"></div>
+        <a href="#" id="auth-trigger" class="noir-btn locked">
+          <span class="icon-box">🔒</span>
+          <span class="label">ACCESS</span>
+        </a>
+      </div>
+
+      <div class="sidebar-footer">
+        <div class="hp-bar">
+          <div class="hp-fill" style="width: 100%"></div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- RIGHT CONTENT AREA -->
+    <main class="viewport">
+      <div class="crt-overlay"></div>
+
+      <!-- Dynamic Content -->
+      <div id="app" class="paper-sheet">
+        <!-- Content injected by JS -->
+      </div>
+
+      <!-- Optional: Portrait/Status box to the side of content if needed, 
+           but for mobile responsiveness keeping it simple first -->
+    </main>
+  </div>
+
+  <script src="assets/js/vendor/crypto-js.min.js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
