@@ -3,23 +3,18 @@
   --bg-dark: #050505;
   --bg-panel: #1a1a1a;
   --bg-paper: #b0b0b0;
-
   --text-main: #ffffff;
   --text-paper: #111111;
-
   --border-white: #ffffff;
   --border-thick: 3px;
-
   --accent-red: #d32f2f;
   --accent-active: #ffffff;
-
   --font-main: 'Press Start 2P', cursive;
 }
 
 @font-face {
   font-family: 'Press Start 2P';
-  src:
-    url('../fonts/PressStart2P-Regular.woff2') format('woff2');
+  src: url('../fonts/PressStart2P-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -256,4 +251,44 @@ body {
 ::-webkit-scrollbar-thumb {
   background: var(--border-white);
   border: 1px solid var(--bg-dark);
+}
+
+/* New Styles for Text-Based UI */
+.terminal-list {
+  list-style: none;
+  padding: 0;
+  font-family: 'Press Start 2P', monospace;
+  line-height: 2em;
+}
+
+.terminal-list li::before {
+  content: "> ";
+  color: #777;
+}
+
+.terminal-input {
+  background: var(--text-paper);
+  color: var(--bg-paper);
+  border: none;
+  font-family: 'Press Start 2P', monospace;
+  font-size: 1em;
+  padding: 5px;
+  width: 200px;
+  outline: none;
+}
+
+.inline-btn {
+  background: var(--accent-red);
+  color: var(--text-main);
+  padding: 2px 6px;
+  cursor: pointer;
+  border: 1px solid var(--text-paper);
+  text-decoration: none;
+  display: inline-block;
+}
+
+.redacted {
+  background-color: var(--text-paper);
+  color: var(--text-paper);
+  user-select: none;
 }

@@ -4,3 +4,5 @@ assets/fonts/PressStart2P-Regular.woff
 refern/
 tools/
 *.md
+
+.DS_Store
